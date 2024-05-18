@@ -116,8 +116,8 @@ def project_pc_to_img(pc, img, lidar_ext_mat, cam_ext_mat, cam_int_mat):
 
 if __name__ == "__main__":
     # Path to datasets
-    pc_dir = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_horizon"
-    img_dir = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/cam_imgs"
+    pc_dir = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_horizon"
+    img_dir = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/cam_imgs"
 
     pc_files = (os.listdir(pc_dir))
     img_files = (os.listdir(img_dir))
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     img_timestamps = np.array([int(f[:-4]) for f in img_files])
 
     # Load bag file
-    bag_path = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11"
+    bag_path = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11"
     rosbags_register_types_from_messages_tar(Path(bag_path) / "attachments/message_definitions.tar")
 
     # Read bag file for extrinsic and intrinsic matrices
