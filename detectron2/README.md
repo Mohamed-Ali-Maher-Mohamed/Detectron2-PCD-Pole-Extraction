@@ -11,11 +11,11 @@ This files contains code to fuse only the pole detections from the Cityscapes se
 
 Figure 1. Segmentation results of COCO-trained model.
 
-<img width="600" src="https://github.com/hs-duesseldorf/pole-extraction/assets/66092622/3a5f6f8b-0019-4c64-a8ef-e10c28edc3e4">
+<img width="600" src="https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/fig2.png">
 
 Figure 2. Segmentation results of Cityscapes-trained model.
 
-<img width="600" src="https://github.com/hs-duesseldorf/pole-extraction/assets/66092622/76488d8c-e0dd-4d64-a669-4ddb834094c5">
+<img width="600" src="https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/fig3.png">
 
 Figure 3. Segmentation results after fusing COCO and Cityscapes-trained models.
 
