@@ -186,11 +186,11 @@ def extract_poles(pan_seg, seg_info, proj_pts, hash_table, pc):
 
 if __name__ == "__main__":
     # Path to segmented images
-    seg_label_dir = "/Users/kelly/Documents/hsd/detectron2/output/siemens_inference"
+    seg_label_dir = "/Users/Mohamed/Documents/hsd/detectron2/output/siemens_inference"
 
     # Path to datasets
-    pc_dir = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_horizon"
-    img_dir = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/segmented_cam_imgs"
+    pc_dir = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_horizon"
+    img_dir = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/segmented_cam_imgs"
 
     pc_files = sorted(os.listdir(pc_dir))
     img_files = sorted(os.listdir(img_dir))
@@ -198,7 +198,7 @@ if __name__ == "__main__":
     pc_timestamps = np.array([int(f[:-4]) for f in pc_files])
 
     # Load bag file
-    bag_path = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11"
+    bag_path = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11"
     rosbags_register_types_from_messages_tar(Path(bag_path) / "attachments/message_definitions.tar")
 
     # Read bag file for extrinsic and intrinsic matrices
