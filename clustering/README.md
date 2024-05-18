@@ -13,6 +13,6 @@ A visualization of the output of `clustering.py` is shown below:
 ## `project_pc_to_img.py`
 This file contains the functions used for extracting the intrinsic and extrinsic matrices and performing the 3D point cloud to 2D image plane transformation. The original image overlaid with the projected point cloud are shown below.
 
-![3d to 2d projection](https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/projectd%203d%20to%202d.png) "3d to 2d projection"
+![3d to 2d projection](https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/projectd%203d%20to%202d.png)"3d to 2d projection"
 
 
