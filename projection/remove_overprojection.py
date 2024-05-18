@@ -32,12 +32,12 @@ def cantor(a, b):
 
 if __name__ == "__main__":
     # Path to segmented images
-    seg_label_dir = "/Users/kelly/Documents/hsd/detectron2/output/siemens_inference"
+    seg_label_dir = "/Users/Mohamed/Documents/hsd/detectron2/output/siemens_inference"
 
     # Path to datasets
-    hor_dir = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_horizon"
-    tele_dir = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_tele_15"
-    img_dir = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/segmented_cam_imgs"
+    hor_dir = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_horizon"
+    tele_dir = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_tele_15"
+    img_dir = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/segmented_cam_imgs"
 
     hor_files = sorted(os.listdir(hor_dir))
     tele_files = sorted(os.listdir(tele_dir))
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     tele_timestamps = np.array([int(f[:-4]) for f in tele_files])
 
     # Load bag file
-    bag_path = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11"
+    bag_path = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11"
     rosbags_register_types_from_messages_tar(Path(bag_path) / "attachments/message_definitions.tar")
 
     # Read bag file for extrinsic and intrinsic matrices
