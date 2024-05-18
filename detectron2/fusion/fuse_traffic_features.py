@@ -40,11 +40,11 @@ def setup_cfg(config_file, opts):
 if __name__ == "__main__":
     instance_id = '1651752750486380409'
 
-    coco_pred_path = os.path.join("/Users/kelly/Documents/hsd/detectron2/output/siemens_inference", instance_id, instance_id + "_coco.pkl")
-    cityscapes_pred_path = os.path.join("/Users/kelly/Documents/hsd/detectron2/output/siemens_inference", instance_id, instance_id + "_cityscapes.pkl")
+    coco_pred_path = os.path.join("/Users/Mohamed/Documents/hsd/detectron2/output/siemens_inference", instance_id, instance_id + "_coco.pkl")
+    cityscapes_pred_path = os.path.join("/Users/Mohamed/Documents/hsd/detectron2/output/siemens_inference", instance_id, instance_id + "_cityscapes.pkl")
 
-    config_file = "/Users/kelly/Documents/hsd/detectron2/projects/PanopticFCN/configs/PanopticFCN-Star-R50-3x.yaml"
-    img_path = os.path.join("/Users/kelly/Documents/hsd/detectron2/datasets/siemens", instance_id + ".png")
+    config_file = "/Users/Mohamed/Documents/hsd/detectron2/projects/PanopticFCN/configs/PanopticFCN-Star-R50-3x.yaml"
+    img_path = os.path.join("/Users/Mohamed/Documents/hsd/detectron2/datasets/siemens", instance_id + ".png")
     opts = []
 
     # Load image
@@ -138,6 +138,6 @@ if __name__ == "__main__":
     cv2.destroyAllWindows()
 
     # Save output
-    out_path = os.path.join("/Users/kelly/Documents/hsd/detectron2/output/siemens_inference", instance_id, instance_id + "_fused.png")
+    out_path = os.path.join("/Users/Mohamed/Documents/hsd/detectron2/output/siemens_inference", instance_id, instance_id + "_fused.png")
     vis_output.save(out_path)
 
