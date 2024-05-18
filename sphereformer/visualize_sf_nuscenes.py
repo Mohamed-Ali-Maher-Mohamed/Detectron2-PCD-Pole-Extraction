@@ -5,11 +5,11 @@ import open3d as o3d
 
 if __name__ == '__main__':
     # Load inference results
-    inf_path = "/Users/kelly/Documents/hsd/sphereformer/output/test_nuscenes/lidar_tele_15_1651752733162723670_norm_v3.npy"
+    inf_path = "/Users/Mohamed/Documents/hsd/sphereformer/output/test_nuscenes/lidar_tele_15_1651752733162723670_norm_v3.npy"
     inf = np.load(inf_path)
 
      # Load original point cloud
-    pc_path = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_tele_15/1651752733162723670.npy"
+    pc_path = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_tele_15/1651752733162723670.npy"
     pc = np.load(pc_path)
     pc = pc[pc[:, 2] > -1.3]
     points = pc[:, :3]
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     labels = np.argmax(inf, axis=1)
 
     # Load label colours
-    yaml_file = "/Users/kelly/Documents/hsd/sphereformer/SphereFormer/util/semantic-kitti.yaml"
+    yaml_file = "/Users/Mohamed/Documents/hsd/sphereformer/SphereFormer/util/semantic-kitti.yaml"
         
     with open(yaml_file, 'r') as f:
         sem_kitti_yaml = yaml.safe_load(f)
