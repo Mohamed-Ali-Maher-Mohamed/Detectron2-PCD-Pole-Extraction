@@ -9,22 +9,22 @@ In the second method, we use a similar projection method to remove the vegetatio
 
 Finally, a rule-based selection algorithm is used to select the optimal bounding box between the two above listed methods for each pole detection. The output of the pipeline, with different coloured bounding boxes indicating which method was used for detection, is shown below:
 
-<img width="482" alt="Screenshot 2023-08-15 at 4 26 24 PM" src="https://github.com/hs-duesseldorf/pole-extraction/assets/66092622/8cd368eb-560d-4a65-84d0-2e9afa5d64fb">
+<img width="482" alt="Screenshot 2023-08-15 at 4 26 24 PM" src="https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/extract_poles.png">
 
 ## `project_pc_to_img.py`
 This file contains functions used by other scripts which are necessary for projecting the point cloud to the image plane.
 
-<img width="600" src="https://github.com/hs-duesseldorf/pole-extraction/assets/66092622/3a9da64f-2b04-4650-8dec-ef85cc2b9bd3">
-<img width="600" src="https://github.com/hs-duesseldorf/pole-extraction/assets/66092622/b3dbae12-9541-4097-8b75-f68d22af44bc">
+<img width="600" src="https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/project_pcd_to_image.png">
+<img width="600" src="https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/3d_pcd_onto_2d.png">
 
 ## `remove_overprojection.py`
 This file contains the primary code for resolving the issue of overprojection, where multiple layers of the point cloud scene are all classified as poles due to error in the image segmentation. It uses an iterative DBSCAN clustering approach to first cluster the projected pole points into individual pole detections, and then a second clustering on each individual pole detection to select the correct layer to keep. The first clustering is done in the projected 2D space while the second clustering is done in 3D space.
 
 A visualization of the clustering results in 2D space and the final results after two rounds of clustering is shown below.
 
-<img width="600" src="https://github.com/hs-duesseldorf/pole-extraction/assets/66092622/1ed81e17-9e87-4e27-b314-d71fa3abbacf">
+<img width="600" src="https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/clear_poles_2d.png">
 
-<img width="821" alt="Screenshot 2023-07-28 at 9 29 12 AM" src="https://github.com/hs-duesseldorf/pole-extraction/assets/66092622/f485c1fc-99bb-4607-a36b-7d55fc5aa4b6">
+<img width="821" alt="Screenshot 2023-07-28 at 9 29 12 AM" src="https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/clear_poles_3d.png">
 
 
 
