@@ -10,12 +10,12 @@ This folder contains the repository of [detectron2](https://github.com/facebookr
 This respository also contains a new folder titled `fusion`, which contains the code for fusing the segmented traffic features (mainly poles) from the Cityscapes model into the segmentation results of the COCO-trained model.
 
 ## data_parsing
-This folder contains scripts for parsing and extracting the db3 ROS bag files from the Siemens HVLE dataset.
+This folder contains scripts for parsing and extracting the db3 ROS bag files from the recorded Lidar dataset.
 
 ## projection
 This folder contains scripts for projecting the 3D LiDAR point clouds onto the 2D image plane. It contains the code for extracting the extrinsic and intrinsic matrices, projecting the points onto the image, isolating the poles from the point cloud scene, and the final method for pole extraction.
 
-The main contributions of the summer can be found in this folder.
+The main contributions of the project can be found in this folder.
 
 ## sphereformer
-This folder contains the respository of [SphereFormer](https://github.com/dvlab-research/SphereFormer), which was used for testing LiDAR segmentation on the Siemens HVLE dataset using the pre-trained SphereFormer models. It also contains additional scripts for visualizing segmentation results and visualizing/normalizing intensity distributions.
+This folder contains the respository of [SphereFormer](https://github.com/dvlab-research/SphereFormer), which was used for testing LiDAR segmentation on the recorded Lidar dataset using the pre-trained SphereFormer models. It also contains additional scripts for visualizing segmentation results and visualizing/normalizing intensity distributions.
