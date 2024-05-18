@@ -1,7 +1,5 @@
 # pole-extraction
-This respository contains work completed by Kelly Zhu during her DAAD RISE 2023 internship. 
-
-It contains code to extract poles from LiDAR point clouds by projecting the point cloud to the image plane and segmenting the projected point cloud using a fused image segmentation technique with PanopticFCN. The output of the pipeline is a set of 3D bounding boxes around the detected poles in the point cloud.
+This respository contains code to extract poles from LiDAR point clouds by projecting the point cloud to the image plane and segmenting the projected point cloud using a fused image segmentation technique with PanopticFCN. The output of the pipeline is a set of 3D bounding boxes around the detected poles in the point cloud.
 
 ## clustering
 This folder contains scripts for performing DBSCAN clustering on the LiDAR point cloud scene.
