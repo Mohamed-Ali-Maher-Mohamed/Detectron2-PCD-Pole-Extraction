@@ -7,7 +7,7 @@ This file contains code to fuse three traffic features, namely traffic lights, t
 ## `insert_poles_to_coco.py`
 This files contains code to fuse only the pole detections from the Cityscapes segmentation into the COCO segmentation results.
 
-<img width="600" src="https://github.com/hs-duesseldorf/pole-extraction/assets/66092622/7ee7bd95-0751-4951-9779-3bfcb8974445">
+<img width="600" src="https://github.com/Mohamed-Ali-Maher-Mohamed/Detectron2-PCD-Pole-Extraction/blob/master/Images/fig1.png">
 
 Figure 1. Segmentation results of COCO-trained model.
 
