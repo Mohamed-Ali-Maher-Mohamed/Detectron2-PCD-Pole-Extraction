@@ -1,4 +1,4 @@
-# pole-extraction
+# Detectron2-PCD-Pole-Extraction
 This respository contains code to extract poles from LiDAR point clouds by projecting the point cloud to the image plane and segmenting the projected point cloud using a fused image segmentation technique with PanopticFCN. The output of the pipeline is a set of 3D bounding boxes around the detected poles in the point cloud.
 
 ## clustering
