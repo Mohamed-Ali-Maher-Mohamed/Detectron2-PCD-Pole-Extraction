@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
     # Load the point clouds 
-    # siemens_path = "/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_tele_15/1651752733162723670.npy"
-    siemens_path = '/Users/kelly/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_horizon/1651752733162245419.npy'
-    kitti_path = "/Users/kelly/Documents/hsd/data/00/velodyne/000000.bin"
+    # siemens_path = "/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_tele_15/1651752733162723670.npy"
+    siemens_path = '/Users/Mohamed/Documents/hsd/data/od_recording_2022_05_05-12_12_11/lidar_horizon/1651752733162245419.npy'
+    kitti_path = "/Users/Mohamed/Documents/hsd/data/00/velodyne/000000.bin"
 
     siemens_pc = np.load(siemens_path)
     kitti_pc = pc = np.fromfile(kitti_path, dtype=np.float32).reshape((-1, 4))
